@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=ASAP:wght@400;700&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; box-sizing: border-box; }
+body { font-family: 'ASAP', sans-serif; background: #FAF3FF; padding: 20px; display: flex; flex-direction: column; gap: 16px; }
+.row { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+.label { font-size: 11px; color: #888; width: 100%; margin-bottom: -4px; }
+.btn { display: inline-flex; align-items: center; font-family: 'ASAP', sans-serif; font-weight: 700; border-radius: 100px; border: none; cursor: pointer; transition: opacity 0.15s; padding: 13px 28px; font-size: 15px; text-decoration: none; }
+.btn-sm { padding: 9px 20px; font-size: 13px; }
+.btn-lg { padding: 17px 44px; font-size: 17px; }
+</style>
+</head><body>
+
+<div class="label">Primary · Secondary · Outline · Dark</div>
+<div class="row">
+  <button class="btn" style="background:#FD6003;color:#fff;box-shadow:0 4px 16px rgba(253,96,3,0.32)">Começar agora</button>
+  <button class="btn" style="background:#6C398D;color:#fff;box-shadow:0 4px 16px rgba(108,57,141,0.28)">Saiba mais</button>
+  <button class="btn" style="background:transparent;color:#FD6003;border:2px solid #FD6003">Ver planos</button>
+  <button class="btn" style="background:#2D3145;color:#fff">Entrar</button>
+</div>
+
+<div class="label">Sizes: Small · Default · Large</div>
+<div class="row">
+  <button class="btn btn-sm" style="background:#FD6003;color:#fff">Começar</button>
+  <button class="btn" style="background:#FD6003;color:#fff">Começar agora</button>
+  <button class="btn btn-lg" style="background:#FD6003;color:#fff">Quero experimentar</button>
+</div>
+
+<div class="label">On dark background</div>
+<div class="row" style="background:#2D3145;border-radius:12px;padding:16px;">
+  <button class="btn" style="background:#FD6003;color:#fff">Começar agora</button>
+  <button class="btn" style="background:transparent;color:#fff;border:2px solid #fff">Saiba mais</button>
+</div>
+
+</body></html>

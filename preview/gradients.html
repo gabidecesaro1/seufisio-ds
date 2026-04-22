@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=ASAP:wght@700&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; box-sizing: border-box; }
+body { font-family: 'ASAP', sans-serif; background: #FAF3FF; padding: 16px; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; }
+.card { border-radius: 10px; overflow: hidden; }
+.grad { height: 80px; }
+.info { padding: 6px 10px; background: white; font-size: 10px; font-family: monospace; color: #2D3145; }
+</style>
+</head><body>
+<div class="card">
+  <div class="grad" style="background: linear-gradient(135deg, #FD6003, #6C398D)"></div>
+  <div class="info">--gradient-hero<br>Orange → Purple</div>
+</div>
+<div class="card">
+  <div class="grad" style="background: linear-gradient(135deg, #6C398D, #FD6003)"></div>
+  <div class="info">--gradient-hero-alt<br>Purple → Orange</div>
+</div>
+<div class="card">
+  <div class="grad" style="background: radial-gradient(ellipse at bottom left, #FD6003, #2D3145 60%)"></div>
+  <div class="info">--gradient-dark<br>Navy ↗ Orange</div>
+</div>
+<div class="card">
+  <div class="grad" style="background: linear-gradient(135deg, #FD6003, #9B2FA0)"></div>
+  <div class="info">--gradient-warm<br>Orange → Violet</div>
+</div>
+<div class="card">
+  <div class="grad" style="background: linear-gradient(135deg, #6C398D, #FD6003 60%)"></div>
+  <div class="info">--gradient-cool<br>Purple → Orange</div>
+</div>
+<div class="card">
+  <div class="grad" style="background: radial-gradient(ellipse at center, #FFFFFF 30%, #E8DAEE 100%)"></div>
+  <div class="info">--gradient-light<br>White → Lavender</div>
+</div>
+</body></html>

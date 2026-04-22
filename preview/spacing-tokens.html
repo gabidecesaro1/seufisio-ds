@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=ASAP:wght@400;700&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; box-sizing: border-box; }
+body { font-family: 'ASAP', sans-serif; background: #FAF3FF; padding: 20px; display: flex; gap: 32px; }
+.col { display: flex; flex-direction: column; gap: 10px; flex: 1; }
+.section-label { font-size: 11px; font-weight: 700; color: #6C398D; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 2px; }
+.row { display: flex; align-items: center; gap: 10px; }
+.box { background: #FD6003; border-radius: 4px; flex-shrink: 0; }
+.token { font-family: monospace; font-size: 10px; color: #6C398D; width: 72px; flex-shrink: 0; }
+.val { font-size: 11px; color: #888; }
+.radius-demo { background: #fff; border: 2px solid #FD6003; width: 52px; height: 32px; flex-shrink: 0; }
+.shadow-demo { background: #fff; width: 52px; height: 32px; border-radius: 8px; flex-shrink: 0; }
+</style>
+</head><body>
+
+<div class="col">
+  <div class="section-label">Spacing</div>
+  <div class="row"><div class="token">--space-2</div><div class="box" style="width:8px;height:16px"></div><div class="val">8px</div></div>
+  <div class="row"><div class="token">--space-4</div><div class="box" style="width:16px;height:16px"></div><div class="val">16px</div></div>
+  <div class="row"><div class="token">--space-6</div><div class="box" style="width:24px;height:16px"></div><div class="val">24px</div></div>
+  <div class="row"><div class="token">--space-8</div><div class="box" style="width:32px;height:16px"></div><div class="val">32px</div></div>
+  <div class="row"><div class="token">--space-10</div><div class="box" style="width:40px;height:16px"></div><div class="val">40px</div></div>
+  <div class="row"><div class="token">--space-12</div><div class="box" style="width:48px;height:16px"></div><div class="val">48px</div></div>
+  <div class="row"><div class="token">--space-16</div><div class="box" style="width:64px;height:16px"></div><div class="val">64px</div></div>
+</div>
+
+<div class="col">
+  <div class="section-label">Border Radius</div>
+  <div class="row"><div class="token">--radius-sm</div><div class="radius-demo" style="border-radius:6px"></div><div class="val">6px</div></div>
+  <div class="row"><div class="token">--radius-md</div><div class="radius-demo" style="border-radius:10px"></div><div class="val">10px</div></div>
+  <div class="row"><div class="token">--radius-lg</div><div class="radius-demo" style="border-radius:16px"></div><div class="val">16px</div></div>
+  <div class="row"><div class="token">--radius-xl</div><div class="radius-demo" style="border-radius:24px"></div><div class="val">24px</div></div>
+  <div class="row"><div class="token">--radius-pill</div><div class="radius-demo" style="border-radius:100px"></div><div class="val">100px</div></div>
+
+  <div class="section-label" style="margin-top:8px">Shadows</div>
+  <div class="row"><div class="token">--shadow-sm</div><div class="shadow-demo" style="box-shadow:0 2px 8px rgba(45,49,69,.10)"></div></div>
+  <div class="row"><div class="token">--shadow-md</div><div class="shadow-demo" style="box-shadow:0 4px 20px rgba(45,49,69,.14)"></div></div>
+  <div class="row"><div class="token">--shadow-orange</div><div class="shadow-demo" style="background:#FD6003;box-shadow:0 4px 20px rgba(253,96,3,.35)"></div></div>
+  <div class="row"><div class="token">--shadow-purple</div><div class="shadow-demo" style="background:#6C398D;box-shadow:0 4px 20px rgba(108,57,141,.32)"></div></div>
+</div>
+
+</body></html>

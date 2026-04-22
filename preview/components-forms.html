@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=ASAP:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; box-sizing: border-box; }
+body { font-family: 'ASAP', sans-serif; background: #FAF3FF; padding: 20px; display: flex; flex-direction: column; gap: 14px; }
+label { display: block; font-size: 12px; font-weight: 600; color: #2D3145; margin-bottom: 5px; }
+input, select, textarea {
+  width: 100%; font-family: 'ASAP', sans-serif; font-size: 14px;
+  border: 1.5px solid rgba(108,57,141,0.25); border-radius: 10px;
+  padding: 11px 14px; color: #2D3145; background: #fff; outline: none;
+  transition: border-color 0.15s;
+}
+input:focus, select:focus { border-color: #FD6003; box-shadow: 0 0 0 3px rgba(253,96,3,0.12); }
+.row { display: flex; gap: 12px; }
+.field { flex: 1; }
+input.error { border-color: #e53; }
+.hint { font-size: 11px; color: #888; margin-top: 4px; }
+.hint.error { color: #e53; }
+</style>
+</head><body>
+<div class="row">
+  <div class="field"><label>Nome completo</label><input type="text" placeholder="Mariana Oliveira"></div>
+  <div class="field"><label>E-mail</label><input type="email" placeholder="mariana@studio.com"></div>
+</div>
+<div class="field"><label>Tipo de negócio</label>
+  <select><option>Estúdio de Pilates</option><option>Clínica de Fisioterapia</option><option>Espaço de Estética</option></select>
+</div>
+<div class="field">
+  <label>Mensagem</label>
+  <textarea rows="3" placeholder="Como podemos ajudar?"></textarea>
+</div>
+<div class="field">
+  <label>Telefone (campo com erro)</label>
+  <input class="error" type="text" value="11 9999">
+  <div class="hint error">Número incompleto. Ex: (11) 99999-9999</div>
+</div>
+</body></html>

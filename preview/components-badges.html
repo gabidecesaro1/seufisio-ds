@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=ASAP:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; box-sizing: border-box; }
+body { font-family: 'ASAP', sans-serif; background: #FAF3FF; padding: 20px; display: flex; flex-direction: column; gap: 12px; }
+.row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+.label { font-size: 11px; color: #888; }
+.badge { display: inline-block; font-family: 'ASAP', sans-serif; font-weight: 700; font-size: 12px; border-radius: 100px; padding: 4px 13px; }
+</style>
+</head><body>
+
+<div class="label">Filled badges</div>
+<div class="row">
+  <span class="badge" style="background:#FD6003;color:#fff">Novo</span>
+  <span class="badge" style="background:#6C398D;color:#fff">Pilates</span>
+  <span class="badge" style="background:#2D3145;color:#fff">Fisioterapia</span>
+  <span class="badge" style="background:#FD6003;color:#fff">Estética</span>
+  <span class="badge" style="background:#6C398D;color:#fff">Destaque</span>
+</div>
+
+<div class="label">Outline badges</div>
+<div class="row">
+  <span class="badge" style="background:transparent;color:#FD6003;border:1.5px solid #FD6003">Pro</span>
+  <span class="badge" style="background:transparent;color:#6C398D;border:1.5px solid #6C398D">Premium</span>
+  <span class="badge" style="background:transparent;color:#2D3145;border:1.5px solid #2D3145">Beta</span>
+</div>
+
+<div class="label">Tinted badges</div>
+<div class="row">
+  <span class="badge" style="background:rgba(253,96,3,0.12);color:#FD6003">Agendamento</span>
+  <span class="badge" style="background:rgba(108,57,141,0.12);color:#6C398D">Financeiro</span>
+  <span class="badge" style="background:rgba(45,49,69,0.10);color:#2D3145">Relatórios</span>
+</div>
+
+</body></html>

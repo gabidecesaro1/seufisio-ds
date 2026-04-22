@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=ASAP:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; box-sizing: border-box; }
+body { font-family: 'ASAP', sans-serif; background: #fff; padding: 20px; display: flex; flex-direction: column; gap: 8px; }
+.row { display: flex; align-items: center; gap: 12px; }
+.dot { width: 36px; height: 36px; border-radius: 8px; flex-shrink: 0; border: 1px solid rgba(0,0,0,0.08); }
+.meta { display: flex; flex-direction: column; gap: 1px; }
+.token { font-family: monospace; font-size: 11px; color: #6C398D; }
+.desc { font-size: 12px; color: #2D3145; }
+</style>
+</head><body>
+<div class="row"><div class="dot" style="background:#FD6003"></div><div class="meta"><div class="token">--color-accent</div><div class="desc">Primary CTA, links, highlights</div></div></div>
+<div class="row"><div class="dot" style="background:#6C398D"></div><div class="meta"><div class="token">--color-accent-2</div><div class="desc">Secondary accent, institutional</div></div></div>
+<div class="row"><div class="dot" style="background:#2D3145"></div><div class="meta"><div class="token">--color-text-primary</div><div class="desc">Body text, headings on light</div></div></div>
+<div class="row"><div class="dot" style="background:rgba(45,49,69,0.60)"></div><div class="meta"><div class="token">--color-text-muted</div><div class="desc">Captions, secondary info</div></div></div>
+<div class="row"><div class="dot" style="background:#FAF3FF; border: 1px solid #e5e5e5;"></div><div class="meta"><div class="token">--color-bg-light</div><div class="desc">Light section backgrounds</div></div></div>
+<div class="row"><div class="dot" style="background:rgba(108,57,141,0.18)"></div><div class="meta"><div class="token">--color-border</div><div class="desc">Card borders, dividers</div></div></div>
+</body></html>

@@ -1,0 +1,217 @@
+/* ============================================================
+   seufisio Design System — Colors & Typography Tokens
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Days+One&family=ASAP:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap');
+
+/* ── Brand Colors ─────────────────────────────────────────── */
+:root {
+  --color-orange:       #FD6003;
+  --color-purple:       #6C398D;
+  --color-navy:         #2D3145;
+  --color-white:        #FFFFFF;
+
+  /* Tints */
+  --color-orange-10:    rgba(253, 96, 3, 0.10);
+  --color-orange-20:    rgba(253, 96, 3, 0.20);
+  --color-orange-50:    rgba(253, 96, 3, 0.50);
+  --color-purple-10:    rgba(108, 57, 141, 0.10);
+  --color-purple-20:    rgba(108, 57, 141, 0.20);
+  --color-purple-50:    rgba(108, 57, 141, 0.50);
+  --color-navy-10:      rgba(45, 49, 69, 0.10);
+
+  /* Semantic */
+  --color-bg-light:     #FAF3FF;   /* lavender-tinted near-white */
+  --color-bg-dark:      var(--color-navy);
+  --color-text-primary: var(--color-navy);
+  --color-text-on-dark: var(--color-white);
+  --color-text-muted:   rgba(45, 49, 69, 0.60);
+  --color-accent:       var(--color-orange);
+  --color-accent-2:     var(--color-purple);
+  --color-border:       rgba(108, 57, 141, 0.18);
+
+  /* ── Gradients ──────────────────────────────────────────── */
+  --gradient-hero:          linear-gradient(135deg, #FD6003 0%, #6C398D 100%);
+  --gradient-hero-alt:      linear-gradient(135deg, #6C398D 0%, #FD6003 100%);
+  --gradient-dark:          radial-gradient(ellipse at bottom left, #FD6003 0%, #2D3145 60%);
+  --gradient-light:         radial-gradient(ellipse at center, #FFFFFF 30%, #E8DAEE 100%);
+  --gradient-warm:          linear-gradient(135deg, #FD6003 0%, #9B2FA0 100%);
+  --gradient-cool:          linear-gradient(135deg, #6C398D 0%, #FD6003 60%, #FD6003 100%);
+
+  /* ── Typography ─────────────────────────────────────────── */
+  --font-display:     'Days One', sans-serif;
+  --font-body:        'ASAP', sans-serif;
+
+  /* Scale */
+  --text-xs:    12px;
+  --text-sm:    14px;
+  --text-base:  16px;
+  --text-md:    18px;
+  --text-lg:    20px;
+  --text-xl:    24px;
+  --text-2xl:   32px;
+  --text-3xl:   40px;
+  --text-4xl:   56px;
+  --text-5xl:   72px;
+
+  /* Weights */
+  --weight-regular: 400;
+  --weight-medium:  500;
+  --weight-semibold: 600;
+  --weight-bold:    700;
+
+  /* Line heights */
+  --leading-tight:  1.15;
+  --leading-snug:   1.3;
+  --leading-normal: 1.5;
+  --leading-loose:  1.7;
+
+  /* ── Spacing ─────────────────────────────────────────────── */
+  --space-1:   4px;
+  --space-2:   8px;
+  --space-3:   12px;
+  --space-4:   16px;
+  --space-5:   20px;
+  --space-6:   24px;
+  --space-8:   32px;
+  --space-10:  40px;
+  --space-12:  48px;
+  --space-16:  64px;
+  --space-20:  80px;
+
+  /* ── Radii ───────────────────────────────────────────────── */
+  --radius-sm:   6px;
+  --radius-md:   10px;
+  --radius-lg:   16px;
+  --radius-xl:   24px;
+  --radius-pill: 100px;
+
+  /* ── Shadows ─────────────────────────────────────────────── */
+  --shadow-sm:  0 2px 8px rgba(45,49,69,0.10);
+  --shadow-md:  0 4px 20px rgba(45,49,69,0.14);
+  --shadow-lg:  0 8px 40px rgba(45,49,69,0.18);
+  --shadow-orange: 0 4px 20px rgba(253,96,3,0.30);
+  --shadow-purple: 0 4px 20px rgba(108,57,141,0.25);
+}
+
+/* ── Semantic element defaults ──────────────────────────────── */
+body {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  color: var(--color-text-primary);
+  line-height: var(--leading-normal);
+  background: var(--color-white);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-body);
+  font-weight: var(--weight-bold);
+  line-height: var(--leading-tight);
+  color: var(--color-navy);
+}
+
+/* Display titles use Days One */
+.display, .title-event, .title-frame {
+  font-family: var(--font-display);
+  font-weight: var(--weight-regular); /* Days One has no weights */
+}
+
+h1  { font-size: var(--text-4xl); }
+h2  { font-size: var(--text-3xl); }
+h3  { font-size: var(--text-2xl); }
+h4  { font-size: var(--text-xl); }
+h5  { font-size: var(--text-lg); }
+h6  { font-size: var(--text-md); }
+
+p   { font-size: var(--text-base); line-height: var(--leading-normal); }
+small { font-size: var(--text-sm); }
+
+/* ── Utility classes ────────────────────────────────────────── */
+.text-orange  { color: var(--color-orange); }
+.text-purple  { color: var(--color-purple); }
+.text-navy    { color: var(--color-navy); }
+.text-white   { color: var(--color-white); }
+.text-muted   { color: var(--color-text-muted); }
+
+.bg-orange    { background-color: var(--color-orange); }
+.bg-purple    { background-color: var(--color-purple); }
+.bg-navy      { background-color: var(--color-navy); }
+.bg-white     { background-color: var(--color-white); }
+.bg-light     { background-color: var(--color-bg-light); }
+.bg-gradient  { background: var(--gradient-hero); }
+
+/* ── Button base ────────────────────────────────────────────── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-family: var(--font-body);
+  font-weight: var(--weight-bold);
+  font-size: var(--text-base);
+  border-radius: var(--radius-pill);
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.18s ease, transform 0.18s ease, box-shadow 0.18s ease;
+  text-decoration: none;
+  padding: 14px 32px;
+  line-height: 1;
+}
+.btn:hover { opacity: 0.88; transform: translateY(-1px); }
+.btn:active { transform: scale(0.97); }
+
+.btn-primary {
+  background: var(--color-orange);
+  color: var(--color-white);
+  box-shadow: var(--shadow-orange);
+}
+.btn-secondary {
+  background: var(--color-purple);
+  color: var(--color-white);
+  box-shadow: var(--shadow-purple);
+}
+.btn-outline-orange {
+  background: transparent;
+  color: var(--color-orange);
+  border: 2px solid var(--color-orange);
+}
+.btn-outline-white {
+  background: transparent;
+  color: var(--color-white);
+  border: 2px solid var(--color-white);
+}
+.btn-dark {
+  background: var(--color-navy);
+  color: var(--color-white);
+}
+.btn-sm { padding: 10px 22px; font-size: var(--text-sm); }
+.btn-lg { padding: 18px 48px; font-size: var(--text-md); }
+
+/* ── Card ────────────────────────────────────────────────────── */
+.card {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  box-shadow: var(--shadow-sm);
+}
+.card-dark {
+  background: var(--color-navy);
+  color: var(--color-white);
+  border-color: transparent;
+}
+
+/* ── Badge ───────────────────────────────────────────────────── */
+.badge {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-weight: var(--weight-bold);
+  font-size: var(--text-sm);
+  border-radius: var(--radius-pill);
+  padding: 4px 14px;
+}
+.badge-orange { background: var(--color-orange); color: white; }
+.badge-purple { background: var(--color-purple); color: white; }
+.badge-navy   { background: var(--color-navy);   color: white; }
+.badge-outline-orange { background: transparent; color: var(--color-orange); border: 1.5px solid var(--color-orange); }
+.badge-outline-purple { background: transparent; color: var(--color-purple); border: 1.5px solid var(--color-purple); }
