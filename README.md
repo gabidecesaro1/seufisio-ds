@@ -10,6 +10,15 @@
 - Brand guide: `uploads/manual-da-marca-01.png` through `uploads/manual-da-marca-29.png`
 - Logo files: `assets/` folder
 
+
+### KNOWLEDGE BASE (AI CONTEXT)
+This folder contains fundamental documents to guide content generation and AI interaction context, ensuring alignment with seufisio’s real-world data.
+- depoimentos.md: Compiled real customer testimonials for social proof.
+- faq.md: Official Frequently Asked Questions and answers.
+- funcionalidades.md: Technical and commercial breakdown of all system features.
+- personas.md: Detailed guide of ideal customer profiles (Mariana, Bruno, Carla).
+- planos_e_precos.md: Updated pricing table and plan implementation guidelines.
+
 ---
 
 ## CONTENT FUNDAMENTALS
@@ -111,11 +120,10 @@ Multiple gradient types all mixing orange (#FD6003), purple (#6C398D), navy (#2D
 | `SKILL.md` | Agent skill entrypoint |
 | `assets/` | Logo files (PNG) |
 | `preview/` | Design system preview cards |
+| `knowledge/` | Context files for AI grounding (Testimonials, FAQ, Features, etc.) |
 | `ui_kit/index.html` | seufisio app UI kit — core screens |
+
 
 ---
 
-## Personas
-1. **Mariana Oliveira** — A Gestora em Expansão (38, Pilates studio owner, Curitiba)
-2. **Bruno Santana** — O Fisioterapeuta que Quer Crescer (32, autonomous physiotherapist, BH)
-3. **Carla Menezes** — A Dona de Rede com Visão de Crescimento (44, multi-unit businesswoman, SJC)
+Note for AI Agents: Always use the files inside the `/knowledge` folder as the primary source of truth for specialized content generation, customer support simulations, or sales copywriting. Do not deviate from the established tone and the mandatory lowercase "seufisio" branding.
